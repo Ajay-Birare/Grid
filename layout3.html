@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-layout-3</title>
+    <style>
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: grid;
+        width: 70%;
+        gap: 5px;
+        /* grid-template-columns: 150px 200px 300px; */
+        grid-template-areas:
+          "box-1 box-2 box-2 box-2"
+          "box-1 box-3 box-3 box-4"
+          "box-1 box-5 box-5 box-5";
+
+        grid-template-rows: 100px 100px 400px;
+        grid-template-columns: 200px 500px;
+      }
+      .items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box-1 {
+        grid-area: box-1;
+        background-color: #ff9b6d;
+      }
+      .box-2 {
+        grid-area: box-2;
+        background-color: #ffd37c;
+      }
+      .box-3 {
+        grid-area: box-3;
+        background-color: #c8d878;
+      }
+      .box-4 {
+        grid-area: box-4;
+        background-color: #7dbca9;
+      }
+      .box-5 {
+        grid-area: box-5;
+        background-color: #87ceeb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="items box-1">box-1</div>
+        <div class="items box-2">box-2</div>
+        <div class="items box-3">box-3</div>
+        <div class="items box-4">box-4</div>
+        <div class="items box-5">box-5</div>
+      </div>
+    </div>
+  </body>
+</html>

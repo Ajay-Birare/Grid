@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-layout-4</title>
+    <style>
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 100px 90px 50px 90px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+      }
+
+      .div1 {
+        grid-area: 1 / 1 / 2 / 4;
+        border: 1px solid black;
+      }
+      .div2 {
+        grid-area: 2 / 1 / 5 / 2;
+        border: 1px solid black;
+      }
+      .div3 {
+        grid-area: 5 / 1 / 6 / 4;
+        border: 1px solid black;
+      }
+      .div4 {
+        grid-area: 2 / 2 / 3 / 4;
+        border: 1px solid black;
+      }
+      .div5 {
+        grid-area: 3 / 2 / 4 / 4;
+        border: 1px solid black;
+      }
+      .div6 {
+        grid-area: 4 / 2 / 5 / 4;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="div1">5555555</div>
+      <div class="div2">5555555</div>
+      <div class="div3">5555555</div>
+      <div class="div4">5555555</div>
+      <div class="div5">5555555</div>
+      <div class="div6">5555555</div>
+    </div>
+  </body>
+</html>

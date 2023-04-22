@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>justify-content</title>
+    <style>
+      .container {
+        height: 500px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 100px 100px 100px;
+        border: 1px solid black;
+        /* justify-content: center; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: end; */
+        /* justify-content: start; */
+        /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+        /* align-content: center; */
+        align-items: center;
+      }
+      .items {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>use of justify content in grid</h2>
+    <div>
+      <div class="container">
+        <div class="items">items 1</div>
+        <div class="items">items 2</div>
+        <div class="items">items 3</div>
+        <div class="items">items 4</div>
+        <div class="items">items 5</div>
+        <div class="items">items 6</div>
+        <div class="items">items 7</div>
+        <div class="items">items 8</div>
+        <div class="items">items 9</div>
+        <div class="items">items 10</div>
+      </div>
+    </div>
+  </body>
+</html>
