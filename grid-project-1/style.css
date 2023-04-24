@@ -67,3 +67,28 @@ body{
 .col-2{
     grid-column:2 span ;
 }
+
+/* this is for media queary to make website responsive */
+@media  screen and (max-width:1024px) {
+    .container{
+        flex-direction: column;
+    }
+    .subheading{
+        width: 50vw;
+    }
+    .gallery{
+        width: 100%;
+        grid-auto-rows: 15em;
+            /* grid-auto-rows: 320px; */
+    }
+    .box{
+        grid-row: span 1;
+        grid-column: span 3;
+    }
+    .heading{
+        font-size:30px;
+    }
+    .subheading{
+        font-size: 0.8em;
+    }
+}
